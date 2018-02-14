@@ -1,0 +1,61 @@
+{
+  "name": "react-native-ignore-warnings",
+  "version": "0.0.1",
+  "description": "Ignore warnings and logs",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "npm run lint:fix && parcel watch src/index.js",
+    "build": "npm run clean && npm run lint:fix && npm run build:lib",
+    "build:lib": "node node_modules/babel-cli/bin/babel src -d lib",
+    "clean": "rm -rf lib dist",
+    "lint": "node node_modules/eslint/bin/eslint ./",
+    "lint:fix": "node node_modules/eslint/bin/eslint --fix ./",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamrizzi/react-native-ignore-warnings.git"
+  },
+  "keywords": [
+    "ignore",
+    "log",
+    "warn",
+    "warning",
+    "console",
+    "info",
+    "error"
+  ],
+  "author": "Jam Risser <jam@jamrizzi.com> (https://jam.jamrizzi.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamrizzi/react-native-ignore-warnings/issues"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/jamrizzi/react-native-ignore-warnings#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-2"
+    ]
+  },
+  "eslintIgnore": [
+    "dist",
+    "lib"
+  ],
+  "dependencies": {
+    "ignore-warnings": "0.0.5",
+    "react-native": "^0.53.0"
+  }
+}
