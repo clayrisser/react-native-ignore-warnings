@@ -7,7 +7,7 @@
 [![Drone](https://ci.jamrizzi.com/api/badges/jamrizzi/react-native-ignore-warnings/status.svg)](https://ci.jamrizzi.com/jamrizzi/react-native-ignore-warnings)
 [![GitHub stars](https://img.shields.io/github/stars/jamrizzi/react-native-ignore-warnings.svg?style=social&label=Stars)](https://github.com/jamrizzi/react-native-ignore-warnings)
 
-> 🤷⚠️ Ignore warnings and logs
+> ⚛️🤷⚠️ Ignore warnings and logs
 
 Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
 
