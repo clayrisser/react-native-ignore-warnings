@@ -1,7 +1,7 @@
 {
   "name": "react-native-ignore-warnings",
-  "version": "0.0.3",
-  "description": "Ignore react native warnings and logs",
+  "version": "0.1.0",
+  "description": "️🤷⚠️ Ignore react native warnings and logs",
   "main": "lib/index.js",
   "scripts": {
     "start": "npm run lint:fix && parcel watch src/index.js",
@@ -33,7 +33,9 @@
   "bugs": {
     "url": "https://github.com/jamrizzi/react-native-ignore-warnings/issues"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/jamrizzi/react-native-ignore-warnings#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -46,9 +48,15 @@
     "eslint-plugin-import": "^2.8.0"
   },
   "babel": {
-    "presets": ["env", "stage-2"]
+    "presets": [
+      "env",
+      "stage-2"
+    ]
   },
-  "eslintIgnore": ["dist", "lib"],
+  "eslintIgnore": [
+    "dist",
+    "lib"
+  ],
   "dependencies": {
     "ignore-warnings": "0.0.5"
   }
