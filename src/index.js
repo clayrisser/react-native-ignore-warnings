@@ -1,4 +1,5 @@
 import ignoreWarnings from 'ignore-warnings';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { YellowBox } from 'react-native';
 
 export default function(type, ignoreMessages) {

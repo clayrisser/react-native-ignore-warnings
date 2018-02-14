@@ -1,6 +1,6 @@
 {
   "name": "react-native-ignore-warnings",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ignore warnings and logs",
   "main": "lib/index.js",
   "scripts": {
@@ -16,23 +16,13 @@
     "type": "git",
     "url": "git+https://github.com/jamrizzi/react-native-ignore-warnings.git"
   },
-  "keywords": [
-    "ignore",
-    "log",
-    "warn",
-    "warning",
-    "console",
-    "info",
-    "error"
-  ],
+  "keywords": ["ignore", "log", "warn", "warning", "console", "info", "error"],
   "author": "Jam Risser <jam@jamrizzi.com> (https://jam.jamrizzi.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jamrizzi/react-native-ignore-warnings/issues"
   },
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "homepage": "https://github.com/jamrizzi/react-native-ignore-warnings#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -45,17 +35,10 @@
     "eslint-plugin-import": "^2.8.0"
   },
   "babel": {
-    "presets": [
-      "env",
-      "stage-2"
-    ]
+    "presets": ["env", "stage-2"]
   },
-  "eslintIgnore": [
-    "dist",
-    "lib"
-  ],
+  "eslintIgnore": ["dist", "lib"],
   "dependencies": {
-    "ignore-warnings": "0.0.5",
-    "react-native": "^0.53.0"
+    "ignore-warnings": "0.0.5"
   }
 }
