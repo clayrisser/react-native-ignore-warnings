@@ -1,6 +1,6 @@
 {
   "name": "react-native-ignore-warnings",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "️🤷⚠️ Ignore react native warnings and logs",
   "main": "lib/index.js",
   "scripts": {
@@ -58,6 +58,6 @@
     "lib"
   ],
   "dependencies": {
-    "ignore-warnings": "0.0.5"
+    "ignore-warnings": "0.1.0"
   }
 }
