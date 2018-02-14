@@ -16,7 +16,18 @@
     "type": "git",
     "url": "git+https://github.com/jamrizzi/react-native-ignore-warnings.git"
   },
-  "keywords": ["ignore", "log", "warn", "warning", "console", "info", "error"],
+  "keywords": [
+    "ignore",
+    "log",
+    "warn",
+    "warning",
+    "console",
+    "info",
+    "error",
+    "react",
+    "react-native",
+    "native"
+  ],
   "author": "Jam Risser <jam@jamrizzi.com> (https://jam.jamrizzi.com)",
   "license": "MIT",
   "bugs": {
