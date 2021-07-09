@@ -1,6 +1,6 @@
 import ignoreWarnings from 'ignore-warnings';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { YellowBox } from 'react-native';
+import { LogBox } from 'react-native';
 
 export default function(type, ignoreMessages) {
   if (!ignoreMessages) {
@@ -8,6 +8,6 @@ export default function(type, ignoreMessages) {
     type = 'warn';
   }
   if (!Array.isArray(ignoreMessages)) ignoreMessages = [ignoreMessages];
-  YellowBox.ignoreWarnings(ignoreMessages);
+  LogBox.ignoreLogs(ignoreMessages);
   ignoreWarnings(type, ignoreMessages);
 }
