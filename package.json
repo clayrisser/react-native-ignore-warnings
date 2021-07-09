@@ -2,7 +2,7 @@
   "name": "react-native-ignore-warnings",
   "version": "0.1.1",
   "description": "️🤷⚠️ Ignore react native warnings and logs",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "npm run lint:fix && parcel watch src/index.js",
     "build": "npm run clean && npm run lint:fix && npm run build:lib",
