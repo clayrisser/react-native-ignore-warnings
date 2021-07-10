@@ -28,7 +28,7 @@ npm install --save react-native-ignore-warnings
 
 ## Usage
 
-```
+```ts
 import ignoreWarnings from 'react-native-ignore-warnings';
 
 ignoreWarnings([
