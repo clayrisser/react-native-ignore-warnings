@@ -1,63 +1,131 @@
 {
   "name": "react-native-ignore-warnings",
-  "version": "0.1.1",
-  "description": "️🤷⚠️ Ignore react native warnings and logs",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "npm run lint:fix && parcel watch src/index.js",
-    "build": "npm run clean && npm run lint:fix && npm run build:lib",
-    "build:lib": "node node_modules/babel-cli/bin/babel src -d lib",
-    "clean": "rm -rf lib dist",
-    "lint": "node node_modules/eslint/bin/eslint ./",
-    "lint:fix": "node node_modules/eslint/bin/eslint --fix ./",
-    "prepublish": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jamrizzi/react-native-ignore-warnings.git"
-  },
+  "version": "0.2.0",
+  "description": "⚛️🤷⚠️ Ignore react native warnings and logs",
+  "sideEffects": false,
   "keywords": [
-    "ignore",
-    "log",
-    "warn",
-    "warning",
     "console",
-    "info",
+    "ecma",
     "error",
+    "ignore",
+    "info",
+    "log",
+    "native",
     "react",
     "react-native",
-    "native"
+    "react-native-ignore-warnings",
+    "warn",
+    "warning",
+    "warnings"
   ],
-  "author": "Jam Risser <jam@jamrizzi.com> (https://jam.jamrizzi.com)",
-  "license": "MIT",
+  "homepage": "https://github.com/clayrisser/react-native-ignore-warnings",
   "bugs": {
-    "url": "https://github.com/jamrizzi/react-native-ignore-warnings/issues"
+    "url": "https://github.com/clayrisser/react-native-ignore-warnings/issues",
+    "email": "email@clayrisser.com"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Clay Risser",
+    "email": "email@clayrisser.com",
+    "url": "https://clayrisser.com"
   },
   "files": [
+    "es",
     "lib"
   ],
-  "homepage": "https://github.com/jamrizzi/react-native-ignore-warnings#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.2.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "eslint": "^4.17.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.8.0"
+  "module": "es/index.js",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clayrisser/react-native-ignore-warnings"
   },
-  "babel": {
-    "presets": [
-      "env",
-      "stage-2"
-    ]
+  "scripts": {
+    "build": "make -s build",
+    "clean": "make -s clean",
+    "coverage": "make -s coverage",
+    "format": "make -s format",
+    "inc": "make -s inc",
+    "lint": "make -s lint",
+    "make": "make",
+    "postinstall": "make -s postinstall",
+    "prepare": "make -s prepare",
+    "purge": "make -s purge",
+    "report": "make -s report",
+    "spellcheck": "make -s spellcheck",
+    "start": "make -s start",
+    "test": "make -s test",
+    "test:ui": "make test-ui",
+    "test:watch": "make -s test-watch"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.6",
+    "core-js": "^3.15.2",
+    "ignore-warnings": "^0.2.1"
+  },
+  "peerDependencies": {
+    "react-native": "^0.64.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "@babel/plugin-proposal-private-methods": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.24",
+    "@types/react-native": "^0.64.11",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-inline-import": "^3.0.0",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "cloc": "^2.8.0",
+    "cspell": "^5.6.6",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-spellcheck": "^0.0.19",
+    "jest": "^27.0.6",
+    "jest-sonar-reporter": "^2.0.0",
+    "lockfile-lint": "^4.6.2",
+    "majestic": "^1.8.1",
+    "prettier": "^2.3.2",
+    "react-native": "^0.64.2",
+    "typescript": "^4.3.5"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   },
   "eslintIgnore": [
-    "dist",
+    "es",
     "lib"
   ],
-  "dependencies": {
-    "ignore-warnings": "0.1.0"
+  "jest": {
+    "testRegex": "((/(tests|__tests__)((/|/[^_.\n][^/\n]*(/[^_.\n][^/\n]+)*/)[^_.\n][^/\n]*))|((/|/.*/)(([^_.\n][^/\n]*.(spec|test))|(spec|test)))).[jt]sx?$",
+    "testEnvironment": "node",
+    "verbose": true,
+    "testPathIgnorePatterns": [
+      "<rootDir>/es/",
+      "<rootDir>/lib/"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/_setup.ts"
+    ]
+  },
+  "jestSonar": {
+    "reportPath": "node_modules/.tmp/reports",
+    "reportFile": "test-report.xml",
+    "indent": 4
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none"
   }
 }
