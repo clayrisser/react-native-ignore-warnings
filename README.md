@@ -31,16 +31,9 @@ npm install --save react-native-ignore-warnings
 ```ts
 import ignoreWarnings from 'react-native-ignore-warnings';
 
-ignoreWarnings([
-  'Watch your six',
-  'Mind the gap',
-  'Beware the ides of March'
-]);
+ignoreWarnings(['Watch your six', 'Mind the gap', 'Beware the ides of March']);
 
-ignoreWarnings('error', [
-  'The house is on fire',
-  'System failure'
-]);
+ignoreWarnings('error', ['The house is on fire', 'System failure']);
 
 ignoreWarnings('log', 'Hello, world');
 ```
@@ -51,17 +44,13 @@ Submit an [issue](https://github.com/clayrisser/react-native-ignore-warnings/iss
 
 ## Contributing
 
-Review the [guidelines for contributing](https://github.com/clayrisser/react-native-ignore-warnings/blob/master/CONTRIBUTING.md)
+Review the [guidelines for contributing](CONTRIBUTING.md)
 
 ## License
 
-[Apache-2.0 License](https://github.com/clayrisser/react-native-ignore-warnings/blob/master/LICENSE)
+[Apache-2.0 License](LICENSE)
 
-[Jam Risser](https://jam.clayrisser.com) &copy; Copyright 2018-2021
-
-## Changelog
-
-Review the [changelog](https://github.com/clayrisser/react-native-ignore-warnings/blob/master/CHANGELOG.md)
+[Silicon Hills LLC](https://siliconhills.dev) &copy; Copyright 2018-2021
 
 ## Credits
 
